@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
- /*
-  * Project metadata
-  */
+/*
+ * Project metadata
+ */
 
-name := "reactive-domain-modeling-scala"
+name := "reactive domain modeling in scala"
 
 version := "0.1"
 
@@ -146,33 +146,33 @@ l:classpath         Enable cross-method optimizations across the entire classpat
 
 libraryDependencies ++= Seq(
   "commons-codec"                     % "commons-codec"                    % "1.10"
-, "commons-io"                        % "commons-io"                       % "2.4"
-, "commons-validator"                 % "commons-validator"                % "1.4.1"
-, "joda-time"                         % "joda-time"                        % "2.9.1"
-, "mysql"                             % "mysql-connector-java"             % "5.1.37"
-, "ch.qos.logback"                    % "logback-classic"                  % "1.1.3"
-, "com.github.pathikrit"             %% "better-files"                     % "2.13.0"
-, "com.github.nscala-time"           %% "nscala-time"                      % "2.6.0"
-, "com.github.t3hnar"                %% "scala-bcrypt"                     % "2.5"
-, "com.google.guava"                  % "guava"                            % "18.0"
-, "com.ibm.icu"                       % "icu4j"                            % "56.1"
-, "com.softwaremill.quicklens"       %% "quicklens"                        % "1.4.2"
-, "com.typesafe"                      % "config"                           % "1.3.0"
-, "com.typesafe.scala-logging"       %% "scala-logging"                    % "3.1.0"
-, "com.typesafe.slick"               %% "slick"                            % "3.1.0"
-, "com.univocity"                     % "univocity-parsers"                % "1.5.6"
-, "org.apache.commons"                % "commons-compress"                 % "1.10"
-, "org.apache.commons"                % "commons-csv"                      % "1.2"
-, "org.apache.commons"                % "commons-lang3"                    % "3.4"
-, "org.apache.commons"                % "commons-math3"                    % "3.5"
-, "org.apache.httpcomponents"         % "httpclient"                       % "4.5.1"
-, "org.joda"                          % "joda-money"                       % "0.10.0"
-, "org.jsoup"                         % "jsoup"                            % "1.8.3"
-, "org.scalactic"                    %% "scalactic"                        % "2.2.5"
-, "org.mockito"                       % "mockito-core"                     % "1.10.19"
-, "org.scalamock"                    %% "scalamock-scalatest-support"      % "3.2.2"
-, "org.scalatest"                    %% "scalatest"                        % "2.2.5"
-, "org.seleniumhq.selenium"           % "selenium-java"                    % "2.48.2"
+  , "commons-io"                        % "commons-io"                       % "2.4"
+  , "commons-validator"                 % "commons-validator"                % "1.4.1"
+  , "joda-time"                         % "joda-time"                        % "2.9.1"
+  , "mysql"                             % "mysql-connector-java"             % "5.1.37"
+  , "ch.qos.logback"                    % "logback-classic"                  % "1.1.3"
+  , "com.github.pathikrit"             %% "better-files"                     % "2.13.0"
+  , "com.github.nscala-time"           %% "nscala-time"                      % "2.6.0"
+  , "com.github.t3hnar"                %% "scala-bcrypt"                     % "2.5"
+  , "com.google.guava"                  % "guava"                            % "18.0"
+  , "com.ibm.icu"                       % "icu4j"                            % "56.1"
+  , "com.softwaremill.quicklens"       %% "quicklens"                        % "1.4.2"
+  , "com.typesafe"                      % "config"                           % "1.3.0"
+  , "com.typesafe.scala-logging"       %% "scala-logging"                    % "3.1.0"
+  , "com.typesafe.slick"               %% "slick"                            % "3.1.0"
+  , "com.univocity"                     % "univocity-parsers"                % "1.5.6"
+  , "org.apache.commons"                % "commons-compress"                 % "1.10"
+  , "org.apache.commons"                % "commons-csv"                      % "1.2"
+  , "org.apache.commons"                % "commons-lang3"                    % "3.4"
+  , "org.apache.commons"                % "commons-math3"                    % "3.5"
+  , "org.apache.httpcomponents"         % "httpclient"                       % "4.5.1"
+  , "org.joda"                          % "joda-money"                       % "0.10.0"
+  , "org.jsoup"                         % "jsoup"                            % "1.8.3"
+  , "org.scalactic"                    %% "scalactic"                        % "2.2.5"
+  , "org.mockito"                       % "mockito-core"                     % "1.10.19"
+  , "org.scalamock"                    %% "scalamock-scalatest-support"      % "3.2.2"
+  , "org.scalatest"                    %% "scalatest"                        % "2.2.5"
+  , "org.seleniumhq.selenium"           % "selenium-java"                    % "2.48.2"
 )
 
 /*
@@ -202,7 +202,7 @@ def desugarImpl[T](c: blackbox.Context)(expr: c.Expr[T]): c.Expr[Unit] = {
   reify { (): Unit }
 }
 def desugar[T](expr: T): Unit = macro desugarImpl[T]
-"""
+                   """
 
 /*
  * Scalastyle: http://www.scalastyle.org/
